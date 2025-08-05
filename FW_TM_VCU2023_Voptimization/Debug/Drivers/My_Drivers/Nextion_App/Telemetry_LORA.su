@@ -1,0 +1,6 @@
+../Drivers/My_Drivers/Nextion_App/Telemetry_LORA.c:39:6:Create_BMS_MsgPacket_For_LORA	240	static
+../Drivers/My_Drivers/Nextion_App/Telemetry_LORA.c:90:6:Create_BCM_MsgPacket_For_LORA	24	static
+../Drivers/My_Drivers/Nextion_App/Telemetry_LORA.c:99:6:Create_SPEED_MsgPacket_For_LORA	8	static
+../Drivers/My_Drivers/Nextion_App/Telemetry_LORA.c:103:6:Create_CURRENT_MsgPacket_For_LORA	16	static
+../Drivers/My_Drivers/Nextion_App/Telemetry_LORA.c:109:6:LORA_Incomming_Packet_ID_From_CANBUS	16	static
+../Drivers/My_Drivers/Nextion_App/Telemetry_LORA.c:131:6:LORA_Send_Together_DATAS	32	static

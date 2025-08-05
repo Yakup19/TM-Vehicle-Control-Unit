@@ -1,0 +1,12 @@
+../Drivers/My_Drivers/Nextion_App/Nextion.c:41:6:Send_BMSMsgPacket_To_Nextion	96	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:113:6:Create_BMSMsgPacket_For_Nextion	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:156:6:nextion_kisalar	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:162:6:nextion_uzunlar	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:168:6:nextion_dortlu	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:174:6:nextion_sol_sinyal	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:180:6:nextion_sag_sinyal	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:186:6:Create_BCM_MsgPacket_For_Nextion	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:241:6:Create_SPEED_MsgPacket_For_Nextion	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:249:6:Create_CURRENT_MsgPacket_For_Nextion	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:258:6:Nextion_Fault	16	static
+../Drivers/My_Drivers/Nextion_App/Nextion.c:292:6:Nextion_Incomming_Packet_ID_From_CANBUS	16	static

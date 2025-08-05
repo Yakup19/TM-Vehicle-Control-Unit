@@ -1,0 +1,6 @@
+Telemetry_LORA.c:39:6:Create_BMS_MsgPacket_For_LORA	11
+Telemetry_LORA.c:90:6:Create_BCM_MsgPacket_For_LORA	2
+Telemetry_LORA.c:99:6:Create_SPEED_MsgPacket_For_LORA	1
+Telemetry_LORA.c:103:6:Create_CURRENT_MsgPacket_For_LORA	1
+Telemetry_LORA.c:109:6:LORA_Incomming_Packet_ID_From_CANBUS	7
+Telemetry_LORA.c:131:6:LORA_Send_Together_DATAS	1
