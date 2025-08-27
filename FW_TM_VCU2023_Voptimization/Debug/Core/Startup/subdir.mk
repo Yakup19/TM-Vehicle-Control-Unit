@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
@@ -16,7 +16,7 @@ S_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Core/Startup/%.o: ../Core/Startup/%.s Core/Startup/subdir.mk
-	arm-none-eabi-gcc -mcpu=cortex-m3 -g -DDEBUG -c -I"C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App" -I"C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -g -DDEBUG -c -I"C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App" -I"C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
 
 clean: clean-Core-2f-Startup
 

@@ -31,9 +31,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/user_diskio.h \
- C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h \
- C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h \
- C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h \
+ C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h \
+ C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h \
+ C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h \
  ../Core/Inc/fatfs_sd.h ../Core/Src/FLASH_PAGE_F1.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -71,8 +71,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/Third_Party/FatFs/src/diskio.h:
 ../Middlewares/Third_Party/FatFs/src/ff.h:
 ../FATFS/Target/user_diskio.h:
-C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h:
-C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h:
-C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h:
+C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h:
+C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h:
+C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h:
 ../Core/Inc/fatfs_sd.h:
 ../Core/Src/FLASH_PAGE_F1.h:

@@ -28,9 +28,9 @@ Drivers/My_Drivers/Canbus_App/Canbus.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h \
- C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h \
- C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h
+ C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h \
+ C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h \
+ C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h
 ../Drivers/My_Drivers/Canbus_App/Canbus.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -60,6 +60,6 @@ Drivers/My_Drivers/Canbus_App/Canbus.o: \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h:
-C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h:
-C:/Users/yakup/STM32CubeIDE/Workspace_1_12/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h:
+C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Nextion.h:
+C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Nextion_App/Telemetry_LORA.h:
+C:/Users/yakup/OneDrive/Belgeler/GitHub/TM-Vehicle-Control-Unit/FW_TM_VCU2023_Voptimization/Drivers/My_Drivers/Canbus_App/Canbus.h:

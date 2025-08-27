@@ -27,7 +27,7 @@
 #include "Telemetry_LORA.h"
 #include "fatfs_sd.h"
 #include "FLASH_PAGE_F1.h"
-
+#include "stdbool.h"
 
 /* USER CODE END Includes */
 
@@ -58,6 +58,8 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+
+bool WriteSD = false;
 
 extern CAN_TxHeaderTypeDef TxHeader; //CAN Bus Transmit Header
 extern CAN_RxHeaderTypeDef RxHeader; //CAN Bus Receive Header
@@ -124,29 +126,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
   		LORA_Send_Together_DATAS();
 	}
 	if (htim->Instance == TIM3) {
-		sd_card[0] = sd_card[0] + 100;
-
-		fresult = f_mount(&fs, "", 1);
-
-		if (fresult == FR_OK) {
-
-			sprintf(buffer_file, "File%lu.txt" "", SD_count);
-			fresult = f_open(&fil, buffer_file, FA_WRITE);
-			if (fresult != FR_OK) {
-				f_open(&fil, buffer_file, FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
-				sprintf(buffer, "*****TURKMEKATRONIK 2023**** ");
-				f_puts(buffer, &fil);
-				clear_buffer();
-			}
-
-			f_lseek(&fil, fil.fsize);
-			sprintf(buffer, "\n%lu;%lu;%lu;%lu;%lu", sd_card[0], sd_card[1],
-					sd_card[2], sd_card[3], sd_card[4]);
-			/*ZAMAN, HIZ,BATARYA SICAKLI�?I, GERİLİMİ, KALAN ENERJİ*/
-			f_puts(buffer, &fil);
-			clear_buffer();
-			fresult = f_close(&fil);
-	}
+		WriteSD = true;
 	}
 }
 /*--------------------------------------------------------------------------------*/
@@ -200,7 +180,6 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim2);
 	HAL_TIM_Base_Start_IT(&htim3);
 	HAL_UART_Receive_IT(&huart1, CanRX, 1);
-	HAL_Delay(50);
 	Flash_Read_Data(0x0801fc00U, &SD_count, 2);
 	SD_count++;
 	Flash_Write_Data(0x0801fc00U, &SD_count, 2);
@@ -211,9 +190,28 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 	while (1) {
-		HAL_Delay(1000);
+		if(WriteSD == true)
+		{
+			sd_card[0] = sd_card[0] + 100;
+			fresult = f_mount(&fs, "", 1);
+			if (fresult == FR_OK) {
 
-		 //LORA_Send_Together_DATAS();
+				sprintf(buffer_file, "File%lu.txt" "", SD_count);
+				fresult = f_open(&fil, buffer_file, FA_WRITE);
+				if (fresult != FR_OK) {
+					f_open(&fil, buffer_file, FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
+					sprintf(buffer, "*****TURKMEKATRONIK 2023**** ");
+					f_puts(buffer, &fil);
+					clear_buffer();
+				}
+				f_lseek(&fil, fil.fsize);
+				sprintf(buffer, "\n%lu;%lu;%lu;%lu;%lu", sd_card[0], sd_card[1],sd_card[2], sd_card[3], sd_card[4]);
+				f_puts(buffer, &fil);
+				clear_buffer();
+				fresult = f_close(&fil);
+			}
+			WriteSD = false;
+		}
 
     /* USER CODE END WHILE */
 
